@@ -1,37 +1,25 @@
-# FKER: Football Knowledge-Enhanced Reasoning for Chinese Soccer Stance Detection
+# FKER-Soccer-SD
 
-This repository contains reproducibility materials for the paper:
+This repository accompanies the paper:
 
-> 基于知识增强推理的足球社交领域立场检测
+> 基于知识增强推理的足球社交领域立场检测  
+> *Stance Detection within the Football Social Sphere Based on Knowledge-Enhanced Reasoning*
 
-## Overview
+## Status
 
-FKER constructs sample-level football background knowledge from fan-identity cues, metaphor-to-entity mappings, and fan-relation graphs. It further performs structured reasoning for target entity extraction and stance detection.
+**Paper accepted at CCL 2026.**
 
-## Released Materials
+The reproducibility materials are currently being organized and cleaned up.
 
-The current release includes:
+## Planned Release
 
-- Prompt templates for Gemini-3.0-Flash controlled experiments;
-- Gemini API configuration and inference settings;
-- Results of Gemini direct prompting, +CoT, +KB, and +KB+CoT;
-- Evaluation protocol and output normalization rules.
+The following materials will be released after the formal publication of the paper, subject to relevant data-use requirements:
 
-The Soccer-SD dataset, football knowledge base, data processing code, training and inference scripts, and LoRA adapter weights will be released upon formal publication, subject to relevant data-use requirements.
+- Soccer-SD dataset;
+- football domain knowledge base;
+- data processing code;
+- training and inference scripts;
+- prompt templates and evaluation settings;
+- LoRA adapter weights.
 
-## Gemini Controlled Results
-
-| Setting | Target Acc (%) | Stance F1 (%) | Joint Acc (%) |
-|---|---:|---:|---:|
-| Gemini-3.0-Flash | 47.13 | 52.18 | 39.10 |
-| Gemini-3.0-Flash + CoT | 48.09 | 53.77 | 41.24 |
-| Gemini-3.0-Flash + KB | 50.64 | 54.24 | 43.33 |
-| Gemini-3.0-Flash + KB + CoT | 52.77 | 56.21 | 47.78 |
-
-## Repository Structure
-
-```text
-prompts/       Prompt templates
-configs/       API and inference configurations
-results/       Experimental results
-evaluation/    Evaluation protocol
+Thank you for your interest. Updates will be posted in this repository.
